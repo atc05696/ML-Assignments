@@ -1,0 +1,18 @@
+{
+  "dataset": "UCI Breast Cancer Wisconsin (Diagnostic)",
+  "dataset_url": "https://archive.ics.uci.edu/static/public/17/data.csv",
+  "random_state": 42,
+  "test_size": 0.2,
+  "train_instances": 455,
+  "test_instances": 114,
+  "feature_count": 30,
+  "positive_class": "M (malignant)",
+  "negative_class": "B (benign)",
+  "models": [
+    "Logistic Regression",
+    "Decision Tree",
+    "kNN",
+    "Naive Bayes",
+    "Random Forest (Ensemble)"
+  ]
+}
