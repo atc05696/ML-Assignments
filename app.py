@@ -151,5 +151,3 @@ result_output["Actual Diagnosis"] = y_test.map({0: "B", 1: "M"}).values
 result_output["Predicted Diagnosis"] = pd.Series(pred, index=df.index).map({0: "B", 1: "M"}).values
 result_output["Malignant Probability"] = prob
 st.dataframe(result_output, use_container_width=True)
-
-st.caption("Built for the Machine Learning Assignment - 2. Upload test data only, as required by the assignment brief.")
