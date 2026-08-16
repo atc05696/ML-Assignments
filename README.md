@@ -3,6 +3,7 @@
 ## a. Problem statement
 Implement multiple classification models on a public classification dataset, evaluate them using Accuracy, AUC, Precision, Recall, F1 Score and Matthews Correlation Coefficient (MCC), and deploy an interactive Streamlit application that allows the evaluator to upload test data and compare model performance.
 
+
 ## b. Dataset description
 **Dataset:** Breast Cancer Wisconsin (Diagnostic)
 
@@ -14,9 +15,11 @@ The dataset is a binary classification problem with **569 instances** and **30 r
 
 The dataset therefore satisfies the assignment minimum of 12 features and 500 instances.
 
+
 ## c. GitHub Repository Link
 
 `https://github.com/atc05696/ML-Assignments/tree/main`
+
 
 ## d. Models used
 
@@ -50,6 +53,7 @@ The implementation below follows the five model names listed in the PDF and the 
 | Naive Bayes | Gaussian Naive Bayes achieved perfect precision on this test split and very high AUC, but its recall was lower than Logistic Regression and Random Forest. |
 | Random Forest (Ensemble) | Random Forest produced the highest accuracy, F1 and MCC on the chosen split while maintaining very high AUC and perfect precision. It is therefore the best overall performer for this dataset/split. |
 | **Overall Winner for your dataset?** | **Random Forest (Ensemble)** based on the strongest overall combination of Accuracy, F1 and MCC. |
+
 
 
 
