@@ -15,13 +15,12 @@ The dataset is a binary classification problem with **569 instances** and **30 r
 The dataset therefore satisfies the assignment minimum of 12 features and 500 instances.
 
 ## c. GitHub Repository Link
-**To be updated after creating the repository:**
 
-`https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPOSITORY_NAME>`
+`https://github.com/atc05696/ML-Assignments/tree/main`
 
 ## d. Models used
 
-The assignment PDF explicitly names five classification models (although one line says "all 6 ML models"). The implementation below follows the five model names listed in the PDF and the five model rows shown in its comparison table.
+The implementation below follows the five model names listed in the PDF and the five model rows shown in its comparison table.
 
 1. Logistic Regression
 2. Decision Tree Classifier
@@ -52,82 +51,8 @@ The assignment PDF explicitly names five classification models (although one lin
 | Random Forest (Ensemble) | Random Forest produced the highest accuracy, F1 and MCC on the chosen split while maintaining very high AUC and perfect precision. It is therefore the best overall performer for this dataset/split. |
 | **Overall Winner for your dataset?** | **Random Forest (Ensemble)** based on the strongest overall combination of Accuracy, F1 and MCC. |
 
-## Project structure
 
-```text
-project-folder/
-├── app.py
-├── requirements.txt
-├── README.md
-├── test_data.csv
-├── model/
-│   ├── train_models.py
-│   ├── metadata.json
-│   ├── logistic_regression.joblib
-│   ├── decision_tree.joblib
-│   ├── knn.joblib
-│   ├── naive_bayes.joblib
-│   └── random_forest_ensemble.joblib
-└── model_metrics.csv
-```
 
-## How to run on BITS Virtual Lab
-
-### 1. Open the terminal in BITS Virtual Lab
-Use the terminal provided by the BITS Virtual Lab and create/enter the project folder.
-
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Train and evaluate the models
-
-```bash
-python model/train_models.py
-```
-
-This downloads the official UCI dataset, creates the 80/20 train/test split, trains all five required models, calculates the six required metrics, saves the model files, and creates `test_data.csv`.
-
-### 4. Run the Streamlit application
-
-```bash
-streamlit run app.py
-```
-
-Open the URL printed by Streamlit in the BITS Virtual Lab browser.
-
-### 5. App usage
-
-1. Upload `test_data.csv` in the sidebar.
-2. Select a model from the model dropdown.
-3. Review the all-model comparison table.
-4. Review the selected model's Accuracy, AUC, Precision, Recall, F1 and MCC.
-5. Review the confusion matrix and classification report.
-6. Review the prediction results on the uploaded test data.
-
-## Streamlit Community Cloud deployment
-
-1. Push this complete project to GitHub.
-2. Confirm `requirements.txt`, `README.md`, `app.py`, `test_data.csv`, and the saved model files are committed.
-3. Open Streamlit Community Cloud.
-4. Sign in using GitHub.
-5. Create a new app and select the repository, branch and `app.py`.
-6. Deploy and test the public app URL.
-
-## Deployment notes
-
-- The Streamlit app loads saved model files; it does not retrain models during upload.
-- Only test data should be uploaded in the app, matching the free-tier capacity requirement in the assignment.
-- The uploaded test CSV must contain the `Diagnosis` column and all 30 feature columns used during training.
-
-## Academic integrity
-
-The assignment brief states that AI tools may be used for learning support and not for direct copy-paste submissions. Understand the code, customise the UI/content, maintain your own Git history, and make your own final submission.
-
-## Links to fill before submission
-
-- GitHub Repository: **PASTE YOUR FINAL GITHUB URL HERE**
-- Live Streamlit App: **PASTE YOUR FINAL STREAMLIT URL HERE**
-- BITS Virtual Lab screenshot: **INSERT YOUR SCREENSHOT IN THE SUBMISSION PDF**
+## Important links
+- GitHub Repository: https://github.com/atc05696/ML-Assignments/tree/main
+- Live Streamlit App: https://ml-assignments-dtbiujgnlfpbwwgeiqehci.streamlit.app/
